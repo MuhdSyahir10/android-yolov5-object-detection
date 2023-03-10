@@ -419,7 +419,7 @@ public class YoloV5Classifier implements Classifier {
 
             final float[] classes = new float[labels.size()];
             for (int c = 0; c < labels.size(); ++c) {
-                classes[c] = out[0][i][5 + c];
+                classes[c] = out[0][i][3 + c];
             }
 
             for (int c = 0; c < labels.size(); ++c) {
